@@ -2,6 +2,7 @@ package com.regex;
 import java.util.regex.Matcher;
 /*
  * For first Name:-> First name starts with Cap and has minimum 3 characters
+ * For Last Name:-> Last name starts with Cap and has minimum 3 characters
  * 
  * @Dnyandeo Bansode
  * 11/07/2022
@@ -17,6 +18,16 @@ public class Regex {
 			System.out.println("Valid First Name.");
 		}else {
 			System.out.println("Invalid First Name.");
+		}
+	}
+	
+	//For Last Name
+	public void validateLastName(String lastName) {
+		String pattern = "^[A-Z][a-z]{2,}$";
+		if(lastName.matches(pattern)) {
+			System.out.println("Valid Last Name.");
+		}else {
+			System.out.println("Invalid Last Name.");
 		}
 	}
 }
