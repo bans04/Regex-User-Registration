@@ -21,11 +21,18 @@ public class RegexMain {
 		
 		System.out.print("Enetr Last Name:-> ");
 		String lastname = scanner.next();
-		regex.validateLastName(lastname);*/
+		regex.validateLastName(lastname);
 		
 		System.out.print("Enter E-Mail Id:-> ");
 		String email = scanner.next();
 		regex.validateEmail(email);
 		
+		System.out.print("Enter Mobile No:-> ");
+		String mobileNo = scanner.next();
+		regex.validateMobileNo(mobileNo);*/
+		
+		System.out.print("Enter Passward:-> ");
+		String passward = scanner.next();
+		regex.validatePassward(passward);
 	}
 }
