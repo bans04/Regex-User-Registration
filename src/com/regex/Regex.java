@@ -7,6 +7,7 @@ import java.util.regex.Matcher;
  * 
  * For Passward rule no1:-> passward must be minimum 8 char
  * 				ruel no2:-> should have at least 1 upper case
+ * 				rule no3:-> should have at least 1 numaric num
  * 
  * @Dnyandeo Bansode
  * 11/07/2022
@@ -60,7 +61,7 @@ public class Regex {
 	
 	//For passward rule no 1
 	public void validatePassward(String passward) {
-		String pattern = "^[A-Z][a-z0-9]{7,}$";
+		String pattern = "^(?=.*[A-Z])(?=.*[0-9])[A-Za-z0-9]{8,}$";
 		
 		if(passward.matches(pattern)) {
 			System.out.println("Valid Passward."); 
