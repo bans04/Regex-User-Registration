@@ -4,6 +4,7 @@ import java.util.Scanner;
  * For First Name:-> As a User need to enter a valid First Name.
  * For last name:-> As a User need to enter a valid First Name.
  * For E-Mail Id:-> As a User need to enter a valid email.
+ * For Passward
  * 
  * @Dnyandeo Bansode
  * 11/07/2022

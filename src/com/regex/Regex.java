@@ -5,6 +5,9 @@ import java.util.regex.Matcher;
  * For Last Name:-> Last name starts with Cap and has minimum 3 characters.
  * For E-Mail Id:-> Email has 3 mandatory parts (abc, bl & co) and 2 optional (xyz & in) with precise @ and . positions.
  * 
+ * For Passward rule no1:-> passward must be minimum 8 char
+ * 				ruel no2:-> should have at least 1 upper case
+ * 
  * @Dnyandeo Bansode
  * 11/07/2022
  * 
@@ -57,7 +60,7 @@ public class Regex {
 	
 	//For passward rule no 1
 	public void validatePassward(String passward) {
-		String pattern = "^[A-Za-z0-9]{8,}$";
+		String pattern = "^[A-Z][a-z0-9]{7,}$";
 		
 		if(passward.matches(pattern)) {
 			System.out.println("Valid Passward."); 
