@@ -59,12 +59,12 @@ public class Regex {
 		}
 	}
 	
-	//For passward rule no 1
+	//For password rule no 4
 	public void validatePassward(String passward) {
-		String pattern = "^(?=.*[A-Z])(?=.*[0-9])[A-Za-z0-9]{8,}$";
+		String pattern = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[\\W])(?=.*[a-z]).{8,}$";
 		
 		if(passward.matches(pattern)) {
-			System.out.println("Valid Passward."); 
+			System.out.println("Valid Passward.");
 		}else{
 			System.out.println("Invalid Passward.");
 		}
