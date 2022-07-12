@@ -69,4 +69,15 @@ public class Regex {
 			System.out.println("Invalid Passward.");
 		}
 	}
+	
+	//For sample E-Mail Id
+	public void validSampleEmailId(String email) {
+		String pattern = "^[a-z.+_-]+[.a-z0-9]*+@[a-z0-9]+[.a-z]+[.a-z0-9]*$";
+		
+		if(email.matches(pattern)) {
+			System.out.println("Valid E-Mail Id.");
+		}else {
+			System.out.println("Invalid E-Mail Id.");
+		}
+	}
 }

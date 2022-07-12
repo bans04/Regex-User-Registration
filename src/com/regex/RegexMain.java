@@ -4,7 +4,7 @@ import java.util.Scanner;
  * For First Name:-> As a User need to enter a valid First Name.
  * For last name:-> As a User need to enter a valid First Name.
  * For E-Mail Id:-> As a User need to enter a valid email.
- * For Passward
+ * For Password
  * 
  * @Dnyandeo Bansode
  * 11/07/2022
@@ -30,10 +30,19 @@ public class RegexMain {
 		
 		System.out.print("Enter Mobile No:-> ");
 		String mobileNo = scanner.next();
-		regex.validateMobileNo(mobileNo);*/
+		regex.validateMobileNo(mobileNo);
 		
 		System.out.print("Enter Passward:-> ");
 		String passward = scanner.next();
-		regex.validatePassward(passward);
+		regex.validatePassward(passward);*/
+		
+		regex.validSampleEmailId("abc@yahoo.com");
+		regex.validSampleEmailId("abc-100@yahoo.com");
+		regex.validSampleEmailId("abc.100@yahoo.com");
+		regex.validSampleEmailId("abc111@abc.com");
+		regex.validSampleEmailId("abc-100@abc.net");
+		regex.validSampleEmailId("abc.100@abc.com.au");
+		regex.validSampleEmailId("abc@1.com");
+		regex.validSampleEmailId("abc@yahoo.com.com");
 	}
 }
