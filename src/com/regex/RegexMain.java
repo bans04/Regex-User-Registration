@@ -34,7 +34,7 @@ public class RegexMain {
 		
 		System.out.print("Enter Passward:-> ");
 		String passward = scanner.next();
-		regex.validatePassward(passward);*/
+		regex.validatePassward(passward);
 		
 		regex.validSampleEmailId("abc@yahoo.com");
 		regex.validSampleEmailId("abc-100@yahoo.com");
@@ -43,6 +43,6 @@ public class RegexMain {
 		regex.validSampleEmailId("abc-100@abc.net");
 		regex.validSampleEmailId("abc.100@abc.com.au");
 		regex.validSampleEmailId("abc@1.com");
-		regex.validSampleEmailId("abc@yahoo.com.com");
+		regex.validSampleEmailId("abc@yahoo.com.com");*/
 	}
 }

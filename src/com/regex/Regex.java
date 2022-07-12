@@ -17,56 +17,64 @@ import java.util.regex.Matcher;
 public class Regex {
 	
 	//For first Name
-	public void validateFirstName(String firstName) {
+	public boolean validateFirstName(String firstName) {
 		String pattern = "^[A-Z][a-z]{2,}$";
 		if(firstName.matches(pattern)) {
 			System.out.println("Valid First Name.");
+			return true;
 		}else {
 			System.out.println("Invalid First Name.");
+			return false;
 		}
 	}
 	
 	//For Last Name
-	public void validateLastName(String lastName) {
+	public boolean validateLastName(String lastName) {
 		String pattern = "^[A-Z][a-z]{2,}$";
 		if(lastName.matches(pattern)) {
 			System.out.println("Valid Last Name.");
+			return true;
 		}else {
 			System.out.println("Invalid Last Name.");
-		}
+			return false;		}
 	}
 	
 	//For Email Id
-	public void validateEmail(String email) {
+	public boolean validateEmail(String email) {
 		String pattern = "^[a-z]+[.a-z]*@[a-z]+[.a-z]+[.a-z]*$";
 		
 		if(email.matches(pattern)) {
 			System.out.println("Valid E-Mail Id.");
+			return true;
 		}else {
 			System.out.println("Invalid E-Mail Id.");
-		}
+			return false;		}
 	}
 	
 	//for Mobile No
-	public void validateMobileNo(String mobileNo) {
+	public boolean validateMobileNo(String mobileNo) {
 		String pattern = "^(91)?\\s[0-9]{10}$";
 		
 		if(mobileNo.matches(pattern)) {
 			System.out.println("Valid Mobile No.");
+			return true;
 		}else {
 			
 			System.out.println("Invalid Mobile No.");
+			return false;
 		}
 	}
 	
 	//For password rule no 4
-	public void validatePassward(String passward) {
+	public boolean validatePassward(String passward) {
 		String pattern = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[\\W])(?=.*[a-z]).{8,}$";
 		
 		if(passward.matches(pattern)) {
 			System.out.println("Valid Passward.");
+			return  true;
 		}else{
 			System.out.println("Invalid Passward.");
+			return false;
 		}
 	}
 	
